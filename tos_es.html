@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos de Uso - Minha Comanda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same CSS as pt version */
+    :root { --primary: #FF9800; --bg: #F9FAFB; --card-bg: #FFFFFF; --text-main: #1F2937; --text-muted: #6B7280; --border: #E5E7EB; --button-bg: #F3F4F6; --button-hover: #E5E7EB; }
+    @media (prefers-color-scheme: dark) { :root { --primary: #2196F3; --bg: #0F172A; --card-bg: #1E293B; --text-main: #F1F5F9; --text-muted: #94A3B8; --border: #334155; --button-bg: #334155; --button-hover: #475569; } }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; display: flex; justify-content: center; min-height: 100vh; }
+    .container { max-width: 800px; width: 90%; margin: 40px 20px; animation: fadeIn 0.8s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; background: linear-gradient(135deg, var(--primary), #FFB74D); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    @media (prefers-color-scheme: dark) { h1 { background: linear-gradient(135deg, var(--primary), #64B5F6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; } }
+    .lang-switcher { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
+    .lang-btn { text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 8px 16px; border-radius: 99px; background-color: var(--button-bg); color: var(--text-main); transition: all 0.2s ease; border: 1px solid var(--border); }
+    .lang-btn:hover { background-color: var(--button-hover); transform: translateY(-2px); }
+    .lang-btn.active { background-color: var(--primary); color: white; border-color: var(--primary); }
+    .card { background-color: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); border: 1px solid var(--border); }
+    p { margin-bottom: 20px; font-size: 1.1rem; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.875rem; color: var(--text-muted); }
+    .back-link { color: var(--primary); text-decoration: none; font-weight: 500; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Términos de Uso</h1>
+      <div class="lang-switcher">
+        <a href="tos_pt.html" class="lang-btn">🇧🇷 Português</a>
+        <a href="tos_en.html" class="lang-btn">🇺🇸 English</a>
+        <a href="tos_es.html" class="lang-btn active">🇪🇸 Español</a>
+      </div>
+    </header>
+
+    <main class="card">
+      <p>Al utilizar <strong>Minha Comanda</strong>, usted acepta que la aplicación está destinada exclusivamente para el seguimiento personal y el control del consumo individual.</p>
+      
+      <p>Sus datos se almacenan localmente en su dispositivo. No recopilamos, sincronizamos ni compartimos su información en servidores externos. Por este motivo, no nos hacemos responsables de la pérdida de datos derivada de fallos de hardware, desinstalación de la app o errores de cálculo.</p>
+      
+      <p>El uso de la aplicación es de su exclusiva responsabilidad. Recomendamos siempre verificar los valores finales con el establecimiento antes de realizar pagos.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Minha Comanda. Todos los derechos reservados.</p>
+      <a href="privacy_es.html" class="back-link">Política de Privacidad</a>
+    </footer>
+  </div>
+</body>
+</html>

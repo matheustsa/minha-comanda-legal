@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Minha Comanda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same CSS as pt version */
+    :root { --primary: #FF9800; --bg: #F9FAFB; --card-bg: #FFFFFF; --text-main: #1F2937; --text-muted: #6B7280; --border: #E5E7EB; --button-bg: #F3F4F6; --button-hover: #E5E7EB; }
+    @media (prefers-color-scheme: dark) { :root { --primary: #2196F3; --bg: #0F172A; --card-bg: #1E293B; --text-main: #F1F5F9; --text-muted: #94A3B8; --border: #334155; --button-bg: #334155; --button-hover: #475569; } }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; display: flex; justify-content: center; min-height: 100vh; }
+    .container { max-width: 800px; width: 90%; margin: 40px 20px; animation: fadeIn 0.8s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; background: linear-gradient(135deg, var(--primary), #FFB74D); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    @media (prefers-color-scheme: dark) { h1 { background: linear-gradient(135deg, var(--primary), #64B5F6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; } }
+    .lang-switcher { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
+    .lang-btn { text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 8px 16px; border-radius: 99px; background-color: var(--button-bg); color: var(--text-main); transition: all 0.2s ease; border: 1px solid var(--border); }
+    .lang-btn:hover { background-color: var(--button-hover); transform: translateY(-2px); }
+    .lang-btn.active { background-color: var(--primary); color: white; border-color: var(--primary); }
+    .card { background-color: var(--card-bg); padding: 40px; border-radius: 24px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); border: 1px solid var(--border); }
+    p { margin-bottom: 20px; font-size: 1.1rem; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.875rem; color: var(--text-muted); }
+    .back-link { color: var(--primary); text-decoration: none; font-weight: 500; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <div class="lang-switcher">
+        <a href="privacy_pt.html" class="lang-btn">🇧🇷 Português</a>
+        <a href="privacy_en.html" class="lang-btn active">🇺🇸 English</a>
+        <a href="privacy_es.html" class="lang-btn">🇪🇸 Español</a>
+      </div>
+    </header>
+
+    <main class="card">
+      <p><strong>Minha Comanda</strong> values your privacy. Our commitment is to ensure that you have full control over your data.</p>
+      
+      <p><strong>Data Collection:</strong> The application does not collect, store, or share personal data on external servers. All information entered in the application (items consumed, values, names) remains exclusively on your device.</p>
+      
+      <p><strong>Third-Party Services:</strong> We use standard Google Play services exclusively for processing support payments (subscriptions or donations). In addition to Google Play subscriptions, the app also offers an option to support the project via PIX (Copy and Paste code) for use in your preferred banking app. This payment data is processed directly by Google or the banking institution, and we do not have access to your card details or sensitive financial information.</p>
+      
+      <p><strong>Security:</strong> Since your data is local, its security depends on the protection of your own device.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Minha Comanda. All rights reserved.</p>
+      <a href="tos_en.html" class="back-link">Terms of Use</a>
+    </footer>
+  </div>
+</body>
+</html>
